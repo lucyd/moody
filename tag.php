@@ -22,7 +22,7 @@ $page = '<html>
 ';
 for($i=1; $i<11; $i++)
 {
-	$link = "http://youtube.com/embed/".substr($parts[$i],0,11)."\n";
+	$link = "http://youtube.com/embed/".substr($parts[$i],0,11);
 	
 	$page.='<iframe width="420" height="345"
 		src="'.$link.'">

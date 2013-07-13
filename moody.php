@@ -7,7 +7,6 @@ if (mysqli_connect_errno($con))
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 $sqlquery = "SELECT * FROM main WHERE tag= \"".$query."\" ORDER BY count DESC";
-//echo $sqlquery;
 $result = mysqli_query($con,$sqlquery);
 Echo "<html>";
 Echo "<body>";
