@@ -11,20 +11,23 @@ function get_url_contents($url){
         return $ret;
 }
 
-//$keyword = $_POST["keyword"];
-$keyword = "dfd";
+$keyword = $_POST["keyword"];
 $search_page = get_url_contents("http://www.youtube.com/results?search_query=".$keyword);
-//echo $search_page;
-$copy_link_start = -20;
-for($i=0; $i<10; $i++)
+$parts = explode('<a href="/watch?v=', $search_page);
+$page = '<html>
+<head>
+<title>Moody</title>
+</head>
+<body>
+';
+for($i=1; $i<11; $i++)
 {
-	$link_start = strpos(substr($search_page, $copy_link_start+20, strlen($search_page)), '<a href="/watch?v=');
-	$copy_link_start = $link_start;
-	$link = substr($search_page, $link_start+9, 20);
-	echo $link_start;
-	echo "----------\n";
-	echo $link;
-	echo "----------\n";
+	$link = "http://youtube.com/embed/".substr($parts[$i],0,11)."\n";
+	$page.='<iframe width="420" height="345"
+		src="'.$link.'">
+		</iframe>';
 }
+$page.="</body></html>";
+echo $page;
 
 ?>
