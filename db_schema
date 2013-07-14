@@ -1,0 +1,1 @@
+create table(url varchar(100), tag(30), count int);
