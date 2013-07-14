@@ -1,7 +1,7 @@
 <?php
 $query = $_POST["query"];
 //echo $query;
-$con = mysqli_connect("localhost","root","spaspa","moody");
+$con = mysqli_connect("localhost","root","jjlk","moody");
 if (mysqli_connect_errno($con))
 {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
