@@ -20,7 +20,7 @@ var empty = [];
 <form action="moody.php" method="post" align="center">
 <div class="ui-widget">
   <label for="query">Mood: </label>
-    <input type="text" id="query" />
+    <input type="text" name="query" id="query" />
     </div>
 <input type="submit" value="Search">
 </form>
