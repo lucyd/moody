@@ -31,5 +31,5 @@ if(!empty($_POST['emotion']))
 
 mysqli_close($con);
 
-header('Location: user.html');
+header('Location: index.php');
 ?>

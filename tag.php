@@ -43,7 +43,6 @@ while($unique_links < 10)
 			<input type="checkbox" name="emotion[]" value="happy">Happy</br>
 			<input type="checkbox" name="emotion[]" value="sad">Sad</br>
 			<input type="checkbox" name="emotion[]" value="angry">Angry</br>
-			<input type="checkbox" name="emotion[]" value="depressed">Depressed</br>
 			<input type="checkbox" name="emotion[]" value="bored">Bored</br>
 			<input type="checkbox" name="emotion[]" value="fear">Fear</br>
 			<input type="checkbox" name="emotion[]" value="hatred">Hatred</br>
